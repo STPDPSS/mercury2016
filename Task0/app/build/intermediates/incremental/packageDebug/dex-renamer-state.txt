@@ -1,0 +1,7 @@
+#Wed Nov 09 02:18:33 SAMT 2016
+base.0=/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b59e3a222608ffaa637f85f720ac71c0ae070637
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2b4a2d0141934c8cad9c0635e8af0d6ad796f1d3/classes.dex
+base.1=/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2b4a2d0141934c8cad9c0635e8af0d6ad796f1d3
+file.0=/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b59e3a222608ffaa637f85f720ac71c0ae070637/classes.dex

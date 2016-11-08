@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_2bc92461f0e7596498760a66115b5ccada9f030c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_461251ca981689c18f3d28053434c8e7cddae27d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_f5285b52358ef100f96dac718c684e1101fcccce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="28a2c80264921f7bdcb8501b4c03eedf8064e7fc">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b59e3a222608ffaa637f85f720ac71c0ae070637/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_afaf1e131227f5de8b6a62cf4fa5d3c0634d270d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_f27950141e0e74216e6e33c53abe641ae4f4ce98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_3d89cccf14fa0a4d58b5c3f5b2a45fa0420698ff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_07d053a9713dbc4f583ae2ad475ed1f096d62e92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_efb1b0e5a18e9cd63df6c0c8dead3a0b6f241820/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_f1ecf38973cc953dee97123fce6e3c72df366607/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_d4fd42d72e245f120554eb894a69a98872f3cad1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_deb257f005b792e956a2198baf626dc99dd3536d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_3ec066caf78863791415a2361ee95f4eb8fc58f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="783cec34818609bef5a9be6d8909db9e96e8adcc">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2b4a2d0141934c8cad9c0635e8af0d6ad796f1d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_178a049f2b9b7f48e775a4d5571021d2653670a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_c9002da5e3ff2fe6271e602fc2906048c219990d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task0/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_09e63142966dc8c9498d15bce71972dc700c8c43/classes.dex" />
+    </item>
+
+</items>
