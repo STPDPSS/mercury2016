@@ -1,8 +1,13 @@
 <resources>
   <string name="app_name">Splash Screen</string>
-  <string name="createItem">Создать новый элемент</string>
+  <string name="create_element">Создание нового элемента</string>
   <string name="ok">OK</string>
+  <string name="yes">Да</string>
+  <string name="no">Нет</string>
   <string name="cancel">Отмена</string>
-  <string name="removeItem">Удалить элемент?</string>
-  <string name="chooseItem">Вы выбрали элемент номер </string>
+  <string name="remove_element">Вы уверены, что хотите удалить </string>
+  <string name="choose_element">Вы нажали на </string>
+  <string name="write_name">Введите название нового элемента</string>
+  <string name="choose_color">Выберите цвет нового элемента</string>
+  <string name="defoult_element_name">Элемент n</string>
 </resources>

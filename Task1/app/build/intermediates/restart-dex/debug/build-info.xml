@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="22"
-    density="xhdpi"
+    abi="x86"
+    api-level="25"
+    density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="55322621333902"
-    token="3519932234651196060"
+    timestamp="105986934844397"
+    token="5878813000992954475"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
@@ -23,29 +23,39 @@
         duration="0" />
 
     <artifact
-        location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-        type="DEX" />
+        location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="53749481830146"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="103240835479684"
+        verifier="BINARY_MANIFEST_FILE_CHANGE" >
         <artifact
-            location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/outputs/apk/app-debug.apk"
+            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="54863380224360"
+        timestamp="105251605070832"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
+            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
     </build>
     <build
-        timestamp="55322621333902"
+        timestamp="105306425598746"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
             type="DEX" />
+    </build>
+    <build
+        timestamp="105986934844397"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
