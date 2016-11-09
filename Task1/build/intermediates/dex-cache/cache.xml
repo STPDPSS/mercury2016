@@ -3,39 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_fb7163d39edef10edc07e313e5adff20aa32af47/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_966cdd141416a32e631bdb121d0666a8ab6126cf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_e41cfa9eeebfc1bbea0636ed6a0d0b9ecb2ae8e8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_201b791f7687a5d1941de9a9495942ac9dd98c7f/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -54,6 +27,60 @@
         revision="25.0.0"
         sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
         <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.0_7daef6bac67611eac352a96cffd0e15a359b520a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_57f5b54bdf5582d2b0278687308ab4a2135832ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/veronika/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_8339fb2f6e57d23626c534b90326b58792591d91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_0cf988430f2cbd1b0728448d64a246dd53bb6dbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_fb7163d39edef10edc07e313e5adff20aa32af47/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_e41cfa9eeebfc1bbea0636ed6a0d0b9ecb2ae8e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_201b791f7687a5d1941de9a9495942ac9dd98c7f/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -129,39 +156,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="819650645dec22a0395d3f0f5e9f0fe326579a24">
-        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ec1cfe363060ee1f97d4e437fdaa620379d11a98/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_57f5b54bdf5582d2b0278687308ab4a2135832ed/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/veronika/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_8339fb2f6e57d23626c534b90326b58792591d91/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ac5725963137ae3cda088a4be2abcba6a38118e3">
+        sha1="95325ef974fdee7332bc752d3899872d99a6c04c">
         <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0115ba33b0d75c1f06145d17acb15f7b7e10a59b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de5ed6626642d7c799809c15935471bd3f2f977f">
+        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ec1cfe363060ee1f97d4e437fdaa620379d11a98/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -189,15 +198,6 @@
         revision="25.0.0"
         sha1="5025063c4c03baa1b6759432195024dd8e5a3f92">
         <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-gridlayout-v7-25.0.0_bdb3016f6274ffbf987d6853a8f673516db53dd9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_0cf988430f2cbd1b0728448d64a246dd53bb6dbe/classes.dex" />
     </item>
 
 </items>

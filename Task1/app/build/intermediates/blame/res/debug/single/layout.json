@@ -96,12 +96,12 @@
         "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/a_start.xml",
-        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/layout/a_start.xml"
-    },
-    {
         "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/a_create_element.xml",
         "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/layout/a_create_element.xml"
+    },
+    {
+        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/a_start.xml",
+        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/layout/a_start.xml"
     },
     {
         "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
