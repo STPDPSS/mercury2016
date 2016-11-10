@@ -5441,27 +5441,8 @@
                     "startLine": 637,
                     "startColumn": 4,
                     "startOffset": 52625,
-                    "endColumn": 56,
-                    "endOffset": 52677
-                },
-                "from": {
-                    "file": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 2,
-                        "startOffset": 340,
-                        "endColumn": 54,
-                        "endOffset": 392
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 638,
-                    "startColumn": 4,
-                    "startOffset": 52682,
                     "endColumn": 67,
-                    "endOffset": 52745
+                    "endOffset": 52688
                 },
                 "from": {
                     "file": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/values/strings.xml",
@@ -5476,11 +5457,11 @@
             },
             {
                 "to": {
-                    "startLine": 639,
+                    "startLine": 638,
                     "startColumn": 4,
-                    "startOffset": 52750,
+                    "startOffset": 52693,
                     "endColumn": 58,
-                    "endOffset": 52804
+                    "endOffset": 52747
                 },
                 "from": {
                     "file": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/values/strings.xml",
@@ -5495,11 +5476,11 @@
             },
             {
                 "to": {
-                    "startLine": 640,
+                    "startLine": 639,
                     "startColumn": 4,
-                    "startOffset": 52809,
+                    "startOffset": 52752,
                     "endColumn": 34,
-                    "endOffset": 52839
+                    "endOffset": 52782
                 },
                 "from": {
                     "file": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/values/strings.xml",
@@ -5514,11 +5495,11 @@
             },
             {
                 "to": {
-                    "startLine": 641,
+                    "startLine": 640,
                     "startColumn": 4,
-                    "startOffset": 52844,
+                    "startOffset": 52787,
                     "endColumn": 33,
-                    "endOffset": 52873
+                    "endOffset": 52816
                 },
                 "from": {
                     "file": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/values/strings.xml",
@@ -5533,11 +5514,11 @@
             },
             {
                 "to": {
-                    "startLine": 642,
+                    "startLine": 641,
                     "startColumn": 4,
-                    "startOffset": 52878,
+                    "startOffset": 52821,
                     "endColumn": 74,
-                    "endOffset": 52948
+                    "endOffset": 52891
                 },
                 "from": {
                     "file": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/values/strings.xml",
@@ -5552,11 +5533,11 @@
             },
             {
                 "to": {
-                    "startLine": 643,
+                    "startLine": 642,
                     "startColumn": 4,
-                    "startOffset": 52953,
+                    "startOffset": 52896,
                     "endColumn": 52,
-                    "endOffset": 53001
+                    "endOffset": 52944
                 },
                 "from": {
                     "file": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/values/values.xml",
@@ -5566,6 +5547,25 @@
                         "startOffset": 34099,
                         "endColumn": 52,
                         "endOffset": 34147
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 643,
+                    "startColumn": 4,
+                    "startOffset": 52949,
+                    "endColumn": 56,
+                    "endOffset": 53001
+                },
+                "from": {
+                    "file": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 2,
+                        "startOffset": 340,
+                        "endColumn": 54,
+                        "endOffset": 392
                     }
                 }
             },
