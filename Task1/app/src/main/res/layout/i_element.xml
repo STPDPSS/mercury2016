@@ -17,14 +17,14 @@
 
   <ImageView
       android:id="@+id/element_color"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      android:layout_width="35dp"
+      android:layout_height="35dp"
       android:layout_marginLeft="8dp"
       android:layout_marginRight="8dp"
       android:layout_toLeftOf="@+id/remove_element"
       android:layout_toStartOf="@+id/remove_element"
       android:layout_centerVertical="true"
-      android:background="?android:attr/listChoiceIndicatorSingle" />
+      android:background="@drawable/empty_circle" />
 
   <Button
       android:id="@+id/remove_element"

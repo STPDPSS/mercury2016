@@ -33,7 +33,34 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
   @Override
   public void onBindViewHolder(ViewHolder viewHolder, int position) {
     Element e = elements.get(position);
+    int iconResourceId = R.drawable.empty_circle;
+    switch (e.getType()) {
+      case RED:
+        iconResourceId = R.drawable.red_circle;
+        break;
+      case ORANGE:
+        iconResourceId = R.drawable.orange_circle;
+        break;
+      case YELLOW:
+      iconResourceId = R.drawable.yellow_circle;
+      break;
+      case GREEN:
+        iconResourceId = R.drawable.green_circle;
+        break;
+      case BLUE:
+        iconResourceId = R.drawable.blue_circle;
+        break;
+      case INDIGO:
+        iconResourceId = R.drawable.indigo_circle;
+        break;
+      case VIOLET:
+        iconResourceId = R.drawable.violet_circle;
+        break;
+    }
+    viewHolder.icon.setImageResource(iconResourceId);
     viewHolder.name.setText(e.getName());
+    viewHolder.removeButtonListener.setElement(e);
+    viewHolder.selectListener.setElement(e);
   }
 
   @Override
@@ -45,15 +72,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private TextView name;
     private ImageView icon;
     private Button remove;
+    private RemoveButtonListener removeButtonListener;
+    private SelectListener selectListener;
 
     public ViewHolder(View itemView) {
       super(itemView);
       name = (TextView) itemView.findViewById(R.id.element_name);
       icon = (ImageView) itemView.findViewById(R.id.element_color);
       remove = (Button) itemView.findViewById(R.id.remove_element);
+      removeButtonListener = new RemoveButtonListener();
+      selectListener = new SelectListener();
 
-      itemView.setOnClickListener(new SelectListener());
-      remove.setOnClickListener(new RemoveButtonListener());
+      itemView.setOnClickListener(selectListener);
+      remove.setOnClickListener(removeButtonListener);
     }
 
     private class SelectListener implements View.OnClickListener {
@@ -65,12 +96,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         selectDialog(v);
       }
 
+      public void setElement(Element e) {
+        this.e = e;
+      }
+
       private void selectDialog(View v) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-        builder.setMessage(R.string.select_element);
-        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+        CharSequence message = v.getContext().getString(R.string.select_element)
+                + " " + e.getName();
+        builder.setMessage(message);
+        builder.setNegativeButton(R.string.ok, new DialogInterface.OnClickListener() {
           public void onClick(DialogInterface dialog, int id) {
-
+            dialog.cancel();
           }
         });
         AlertDialog dialog = builder.create();
@@ -85,22 +122,26 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
       @Override
       public void onClick(View v) {
         removeDialog(v);
-      //  remove(e);
+      }
+
+      public void setElement(Element e) {
+        this.e = e;
       }
 
       private void removeDialog(View v) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-        builder.setMessage(R.string.remove_element);
+        CharSequence message = v.getContext().getString(R.string.remove_element)
+                + " " + e.getName() + "?";
+        builder.setMessage(message);
         builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
           public void onClick(DialogInterface dialog, int id) {
-//            elements.remove(index);
-//            adapter.notifyDataSetChanged();
-//            listView.setSelection(0);
+            remove(e);
+            dialog.cancel();
           }
         });
         builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
           public void onClick(DialogInterface dialog, int id) {
-
+            dialog.cancel();
           }
         });
         AlertDialog dialog = builder.create();
