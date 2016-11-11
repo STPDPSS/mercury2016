@@ -160,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="5047e3e30123ed11136a3596f5781894161d135d">
+        sha1="8f7df2bb7b253800d3a1030d305c24c36486ff36">
         <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0115ba33b0d75c1f06145d17acb15f7b7e10a59b/classes.dex" />
     </item>
     <item
@@ -169,7 +169,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="fc20aa7fe3e76894b0e2acdbac325a082c3f22f2">
+        sha1="1f1f2d9f37567238859fdfcf6b03801196097a44">
         <dex dex="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ec1cfe363060ee1f97d4e437fdaa620379d11a98/classes.dex" />
     </item>
     <item

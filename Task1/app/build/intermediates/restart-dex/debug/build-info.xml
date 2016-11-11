@@ -1,109 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="25"
-    density="xxhdpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="22"
+    density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="154917078581576"
+    timestamp="158043707580497"
     token="5878813000992954475"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="392" />
+        duration="691" />
     <task
         name="instant-run-dex"
-        duration="22" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="59" />
+        duration="206" />
     <task
         name="verifier"
-        duration="37" />
+        duration="19" />
 
     <artifact
-        location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="149571125653259"
+        timestamp="158043707580497"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="154094915335478"
-        verifier="METHOD_ADDED" >
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="154322006262717"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/builds/debug/154322006262717/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="154467925514776"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/builds/debug/154467925514776/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="154540964870462"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/builds/debug/154540964870462/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="154646693763765"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/builds/debug/154646693763765/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="154710165363822"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/builds/debug/154710165363822/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="154745762748926"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/builds/debug/154745762748926/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="154838727095174"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/builds/debug/154838727095174/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="154917078581576"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

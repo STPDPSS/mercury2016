@@ -2,6 +2,7 @@ package com.example.user.task1;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -128,7 +129,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         this.e = e;
       }
 
-      private void removeDialog(View v) {
+      private void removeDialog(final View v) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
         CharSequence message = v.getContext().getString(R.string.remove_element)
                 + " " + e.getName() + "?";
@@ -137,6 +138,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
           public void onClick(DialogInterface dialog, int id) {
             remove(e);
             dialog.cancel();
+            Snackbar.make(v, e.getName() + " был удален", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
           }
         });
         builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {

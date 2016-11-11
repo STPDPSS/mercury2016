@@ -13,20 +13,22 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+  List<Element> elementList = new ArrayList<>();
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.a_main);
+
+    for (int i = 0; i < 50; i++) {
+      elementList.add(new Element(
+              "Элемент " + String.valueOf(i + 1), Element.Type.values()[i % 8]));
+    }
   }
 
   @Override
   protected void onStart() {
     super.onStart();
-
-    List<Element> elementList = new ArrayList<>();
-    for (int i = 0; i < 50; i++) {
-      elementList.add(new Element("Элемент " + String.valueOf(i + 1), Element.Type.values()[i % 8]));
-    }
 
     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
     RecyclerViewAdapter adapter = new RecyclerViewAdapter(elementList);
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     FloatingActionButton floatingActionButton =
             (FloatingActionButton) findViewById(R.id.floatingActionButton);
+    
     floatingActionButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
@@ -49,4 +52,5 @@ public class MainActivity extends AppCompatActivity {
       }
     });
   }
+
 }

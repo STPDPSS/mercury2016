@@ -2934,7 +2934,7 @@ containing a value of this type.
         public static final int disableHome=0x7f0c0010;
         public static final int editText=0x7f0c0045;
         public static final int edit_query=0x7f0c006f;
-        public static final int element_color=0x7f0c0089;
+        public static final int element_color=0x7f0c008a;
         public static final int element_name=0x7f0c0088;
         public static final int end=0x7f0c0028;
         public static final int end_padder=0x7f0c00a1;
@@ -2982,7 +2982,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0c0007;
         public static final int radio=0x7f0c0066;
         public static final int recyclerView=0x7f0c0049;
-        public static final int remove_element=0x7f0c008a;
+        public static final int remove_element=0x7f0c0089;
         public static final int right=0x7f0c002b;
         public static final int right_icon=0x7f0c0099;
         public static final int right_side=0x7f0c0095;
