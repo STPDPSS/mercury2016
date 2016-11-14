@@ -2,5 +2,9 @@
     {
         "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
         "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     }
 ]

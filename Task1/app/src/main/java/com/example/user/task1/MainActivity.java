@@ -1,5 +1,6 @@
 package com.example.user.task1;
 
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -11,18 +12,31 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class MainActivity extends AppCompatActivity {
 
-  List<Element> elementList = new ArrayList<>();
+  private RetainedFragment dataFragment;
+  List<Element> elementList;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.a_main);
 
-    for (int i = 0; i < 50; i++) {
-      elementList.add(new Element(
-              "Элемент " + String.valueOf(i + 1), Element.Type.values()[i % 8]));
+    FragmentManager fm = getFragmentManager();
+    dataFragment = (RetainedFragment) fm.findFragmentByTag("data");
+
+    if (dataFragment == null) {
+      elementList = new ArrayList<>();
+      for (int i = 0; i < 50; i++) {
+        elementList.add(new Element(
+                "Элемент " + String.valueOf(i + 1), Element.Type.values()[i % 8]));
+      }
+      dataFragment = new RetainedFragment();
+      fm.beginTransaction().add(dataFragment, "data").commit();
+      dataFragment.setData(elementList);
+    } else {
+      elementList = dataFragment.getData();
     }
   }
 
@@ -40,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     FloatingActionButton floatingActionButton =
             (FloatingActionButton) findViewById(R.id.floatingActionButton);
-    
+
     floatingActionButton.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
@@ -51,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, CreateElementActivity.class));
       }
     });
+  }
+
+  @Override
+  protected void onDestroy() {
+    super.onDestroy();
+    dataFragment.setData(elementList);
   }
 
 }

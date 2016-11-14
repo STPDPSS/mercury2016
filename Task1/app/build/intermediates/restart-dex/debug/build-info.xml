@@ -5,27 +5,40 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="158043707580497"
+    timestamp="78130372768312"
     token="5878813000992954475"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="691" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="206" />
+        duration="0" />
     <task
         name="verifier"
-        duration="19" />
+        duration="0" />
 
-    <artifact
-        location="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
-
+    <build
+        timestamp="75982127979870"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="76850862359425"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="78130372768312"
+        verifier="COLD_SWAP_REQUESTED" />
     <build
         timestamp="158043707580497"
         verifier="FULL_BUILD_REQUESTED" >

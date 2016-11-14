@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/src/debug/jniLibs"/></dataSet></merger>
