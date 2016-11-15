@@ -12,12 +12,12 @@
         "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_checkbox.xml"
-    },
-    {
         "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/a_main.xml",
@@ -40,28 +40,28 @@
         "source": "/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
         "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout/design_navigation_item_subheader.xml"
     },
     {
-        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/select_dialog_multichoice_material.xml"
+        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
         "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_select_dialog_material.xml"
     },
     {
-        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_action_bar_title_item.xml"
+        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
@@ -112,12 +112,12 @@
         "source": "/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/a_start.xml",
-        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/layout/a_start.xml"
-    },
-    {
         "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/a_create_element.xml",
         "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/layout/a_create_element.xml"
+    },
+    {
+        "merged": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/a_start.xml",
+        "source": "/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/layout/a_start.xml"
     },
     {
         "merged": "/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",

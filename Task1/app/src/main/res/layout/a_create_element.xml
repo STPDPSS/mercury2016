@@ -40,4 +40,22 @@
       android:layout_alignParentStart="true"
       android:layout_below="@+id/editText"
       android:text="@string/choose_color" />
+
+  <Button
+      android:id="@+id/buttonCreate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:text="@string/create" />
+
+  <Button
+      android:id="@+id/buttonCancel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_toLeftOf="@+id/buttonCreate"
+      android:layout_toStartOf="@+id/buttonCreate"
+      android:text="@string/cancel" />
 </RelativeLayout>

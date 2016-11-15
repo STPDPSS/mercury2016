@@ -13,7 +13,6 @@ public class RetainedFragment extends Fragment {
 
   private List<Element> elements;
 
-  // this method is only called once for this fragment
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);

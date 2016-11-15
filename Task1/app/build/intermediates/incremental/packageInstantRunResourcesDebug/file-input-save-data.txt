@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 14 17:58:01 SAMT 2016
+#Mon Nov 14 21:41:29 SAMT 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/resources-debug.ap_/res/layout/design_bottom_navigation_item.xml

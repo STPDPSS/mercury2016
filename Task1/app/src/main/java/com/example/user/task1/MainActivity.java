@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     } else {
       elementList = dataFragment.getData();
     }
+
   }
 
   @Override
@@ -62,9 +63,19 @@ public class MainActivity extends AppCompatActivity {
       }
 
       private void addItem() {
-        startActivity(new Intent(MainActivity.this, CreateElementActivity.class));
+        startActivityForResult(new Intent(MainActivity.this, CreateElementActivity.class), 0);
       }
     });
+  }
+
+  @Override
+  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+
+    if (resultCode == RESULT_OK) {
+      String name = data.getStringExtra("name");
+      elementList.add(new Element(name, Element.Type.BLUE));
+    }
   }
 
   @Override

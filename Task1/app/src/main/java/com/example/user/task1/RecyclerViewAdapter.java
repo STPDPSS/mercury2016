@@ -1,10 +1,16 @@
 package com.example.user.task1;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.admin.SystemUpdatePolicy;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -43,8 +49,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         iconResourceId = R.drawable.orange_circle;
         break;
       case YELLOW:
-      iconResourceId = R.drawable.yellow_circle;
-      break;
+        iconResourceId = R.drawable.yellow_circle;
+        break;
       case GREEN:
         iconResourceId = R.drawable.green_circle;
         break;
@@ -58,10 +64,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         iconResourceId = R.drawable.violet_circle;
         break;
     }
-    viewHolder.icon.setImageResource(iconResourceId);
+    viewHolder.color.setImageResource(iconResourceId);
     viewHolder.name.setText(e.getName());
     viewHolder.removeButtonListener.setElement(e);
     viewHolder.selectListener.setElement(e);
+    viewHolder.changeColorListener.setElement(e);
   }
 
   @Override
@@ -71,22 +78,97 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
   class ViewHolder extends RecyclerView.ViewHolder {
     private TextView name;
-    private ImageView icon;
+    private ImageView color;
     private Button remove;
     private RemoveButtonListener removeButtonListener;
     private SelectListener selectListener;
+    private ChangeColorListener changeColorListener;
 
     public ViewHolder(View itemView) {
       super(itemView);
       name = (TextView) itemView.findViewById(R.id.element_name);
-      icon = (ImageView) itemView.findViewById(R.id.element_color);
+      color = (ImageView) itemView.findViewById(R.id.element_color);
       remove = (Button) itemView.findViewById(R.id.remove_element);
       removeButtonListener = new RemoveButtonListener();
       selectListener = new SelectListener();
+      changeColorListener = new ChangeColorListener();
 
-      itemView.setOnClickListener(selectListener);
+//      itemView.setOnTouchListener(new View.OnTouchListener() {
+//        @Override
+//        public boolean onTouch(View view, MotionEvent motionEvent) {
+//          System.out.println("onTouch");
+//          TextView name = (TextView) view.findViewById(R.id.element_name);
+//          switch (motionEvent.getAction()) {
+//            case MotionEvent.ACTION_DOWN:
+//              view.setBackgroundColor(Color.GRAY);
+//              name.setTextColor(Color.WHITE);
+//              break;
+//            case MotionEvent.ACTION_CANCEL:
+//            case MotionEvent.ACTION_OUTSIDE:
+//            case MotionEvent.ACTION_UP:
+//              view.setBackgroundResource(R.color.cardview_light_background);
+//              name.setTextColor(Color.GRAY);
+//              break;
+//            default:
+//              break;
+//          }
+//          return false;
+//        }
+//      });
       remove.setOnClickListener(removeButtonListener);
+      color.setOnClickListener(changeColorListener);
+      itemView.setOnClickListener(selectListener);
     }
+
+    private class ChangeColorListener implements View.OnClickListener {
+
+      private Element e;
+      final CharSequence colors[] =
+              {"Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Empty"};
+      int color = -1;
+
+      @Override
+      public void onClick(View view) {
+        System.out.println("onClick: change color");
+        changeColorDialog(view);
+      }
+
+      public void setElement(Element e) {
+        this.e = e;
+      }
+
+      private void changeColorDialog(final View v) {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+        CharSequence title = v.getContext().getString(R.string.change_color)
+                + " " + e.getName() + " на:";
+        builder.setTitle(title)
+                .setSingleChoiceItems(colors, -1, new DialogInterface.OnClickListener() {
+
+                  @Override
+                  public void onClick(DialogInterface dialog, int item) {
+                    color = item;
+                  }
+                })
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                  public void onClick(DialogInterface dialog, int id) {
+                    if (color != -1) {
+                      e.setType(Element.Type.values()[color]);
+                      notifyItemChanged(elements.indexOf(e));
+                    }
+                    dialog.cancel();
+                  }
+                })
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                  @Override
+                  public void onClick(DialogInterface dialog, int i) {
+                    dialog.cancel();
+                  }
+                });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+      }
+    }
+
 
     private class SelectListener implements View.OnClickListener {
 
@@ -94,6 +176,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
       @Override
       public void onClick(View v) {
+        System.out.println("onClick: select item");
         selectDialog(v);
       }
 
@@ -101,16 +184,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         this.e = e;
       }
 
-      private void selectDialog(View v) {
+      private void selectDialog(final View v) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
         CharSequence message = v.getContext().getString(R.string.select_element)
                 + " " + e.getName();
-        builder.setMessage(message);
-        builder.setNegativeButton(R.string.ok, new DialogInterface.OnClickListener() {
-          public void onClick(DialogInterface dialog, int id) {
-            dialog.cancel();
-          }
-        });
+        builder.setMessage(message)
+                .setNeutralButton(R.string.ok, new DialogInterface.OnClickListener() {
+                  public void onClick(DialogInterface dialog, int id) {
+                    dialog.cancel();
+                  }
+                });
         AlertDialog dialog = builder.create();
         dialog.show();
       }
@@ -122,6 +205,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
       @Override
       public void onClick(View v) {
+        System.out.println("onClick: remove item");
         removeDialog(v);
       }
 
@@ -133,20 +217,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
         CharSequence message = v.getContext().getString(R.string.remove_element)
                 + " " + e.getName() + "?";
-        builder.setMessage(message);
-        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-          public void onClick(DialogInterface dialog, int id) {
-            remove(e);
-            dialog.cancel();
-            Snackbar.make(v, e.getName() + " был удален", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
-          }
-        });
-        builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
-          public void onClick(DialogInterface dialog, int id) {
-            dialog.cancel();
-          }
-        });
+        builder.setMessage(message)
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                  public void onClick(DialogInterface dialog, int id) {
+                    remove(e);
+                    dialog.cancel();
+                    Snackbar.make(v, e.getName() + " был удален", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                  }
+                })
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                  public void onClick(DialogInterface dialog, int id) {
+                    dialog.cancel();
+                  }
+                });
         AlertDialog dialog = builder.create();
         dialog.show();
       }

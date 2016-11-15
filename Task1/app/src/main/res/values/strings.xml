@@ -10,4 +10,6 @@
   <string name="write_name">Введите название нового элемента</string>
   <string name="choose_color">Выберите цвет нового элемента</string>
   <string name="default_element_name">Элемент n</string>
+  <string name="change_color">Измененить цвет</string>
+  <string name="create">Создать</string>
 </resources>
