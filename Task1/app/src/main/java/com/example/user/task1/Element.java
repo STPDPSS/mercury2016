@@ -1,7 +1,5 @@
 package com.example.user.task1;
 
-import android.os.Parcelable;
-
 /**
  * Created by veronika on 10/11/16.
  */

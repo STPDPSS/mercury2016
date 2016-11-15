@@ -5,40 +5,54 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="98336319932159"
+    timestamp="109368402628833"
     token="5878813000992954475"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="224" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="38" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
+
+    <artifact
+        location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="94833257077534"
+        timestamp="101014665047095"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="98317548632561"
+        timestamp="108065979423750"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="109368402628833"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
             type="DEX" />
     </build>
-    <build
-        timestamp="98336319932159"
-        verifier="COLD_SWAP_REQUESTED" />
     <build
         timestamp="158043707580497"
         verifier="FULL_BUILD_REQUESTED" >

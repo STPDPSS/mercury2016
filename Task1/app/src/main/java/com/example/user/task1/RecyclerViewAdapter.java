@@ -92,29 +92,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
       removeButtonListener = new RemoveButtonListener();
       selectListener = new SelectListener();
       changeColorListener = new ChangeColorListener();
-
-//      itemView.setOnTouchListener(new View.OnTouchListener() {
-//        @Override
-//        public boolean onTouch(View view, MotionEvent motionEvent) {
-//          System.out.println("onTouch");
-//          TextView name = (TextView) view.findViewById(R.id.element_name);
-//          switch (motionEvent.getAction()) {
-//            case MotionEvent.ACTION_DOWN:
-//              view.setBackgroundColor(Color.GRAY);
-//              name.setTextColor(Color.WHITE);
-//              break;
-//            case MotionEvent.ACTION_CANCEL:
-//            case MotionEvent.ACTION_OUTSIDE:
-//            case MotionEvent.ACTION_UP:
-//              view.setBackgroundResource(R.color.cardview_light_background);
-//              name.setTextColor(Color.GRAY);
-//              break;
-//            default:
-//              break;
-//          }
-//          return false;
-//        }
-//      });
       remove.setOnClickListener(removeButtonListener);
       color.setOnClickListener(changeColorListener);
       itemView.setOnClickListener(selectListener);
@@ -129,7 +106,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
       @Override
       public void onClick(View view) {
-        System.out.println("onClick: change color");
+        System.out.println("onClick: change i_color");
         changeColorDialog(view);
       }
 

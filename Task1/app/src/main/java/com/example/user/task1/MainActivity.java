@@ -11,6 +11,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -38,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
     } else {
       elementList = dataFragment.getData();
     }
-
   }
 
   @Override
@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
     if (resultCode == RESULT_OK) {
       String name = data.getStringExtra("name");
-      elementList.add(new Element(name, Element.Type.BLUE));
+      String color = data.getStringExtra("color");
+      elementList.add(new Element(name, Element.Type.values()[Integer.valueOf(color)]));
     }
   }
 

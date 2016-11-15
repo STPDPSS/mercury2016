@@ -3539,14 +3539,7 @@
                     "endOffset": 53057
                 },
                 "from": {
-                    "file": "/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 2,
-                        "startOffset": 646,
-                        "endColumn": 40,
-                        "endOffset": 684
-                    }
+                    "file": "/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/src/main/res/values/strings.xml"
                 }
             },
             {
