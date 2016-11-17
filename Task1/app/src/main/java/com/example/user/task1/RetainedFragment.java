@@ -11,7 +11,9 @@ import java.util.List;
 
 public class RetainedFragment extends Fragment {
 
+  private Object o;
   private List<Element> elements;
+  private Fragment f;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -19,11 +21,11 @@ public class RetainedFragment extends Fragment {
     setRetainInstance(true);
   }
 
-  public void setData(List<Element> elements) {
-    this.elements = elements;
+  public void setData(Object o) {
+    this.o = o;
   }
 
-  public List<Element> getData() {
-    return elements;
+  public Object getData() {
+    return o;
   }
 }

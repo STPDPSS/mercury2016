@@ -1,23 +1,27 @@
 package com.example.user.task1;
 
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 
 public class MainActivity extends AppCompatActivity {
 
-  private RetainedFragment dataFragment;
+  private RetainedFragment elementListFragment;
+  private RetainedFragment namesArrayFragment;
   List<Element> elementList;
+  ArrayList<String> names;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -25,19 +29,29 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.a_main);
 
     FragmentManager fm = getFragmentManager();
-    dataFragment = (RetainedFragment) fm.findFragmentByTag("data");
+    elementListFragment = (RetainedFragment) fm.findFragmentByTag("elementList");
+    namesArrayFragment = (RetainedFragment) fm.findFragmentByTag("names");
 
-    if (dataFragment == null) {
+    if (elementListFragment == null) {
       elementList = new ArrayList<>();
+      names = new ArrayList<>();
+
       for (int i = 0; i < 50; i++) {
-        elementList.add(new Element(
-                "Элемент " + String.valueOf(i + 1), Element.Type.values()[i % 8]));
+        String name = "Элемент " + String.valueOf(i + 1);
+        elementList.add(new Element(name, Element.Type.values()[i % 8]));
+        names.add(name);
       }
-      dataFragment = new RetainedFragment();
-      fm.beginTransaction().add(dataFragment, "data").commit();
-      dataFragment.setData(elementList);
+
+      elementListFragment = new RetainedFragment();
+      fm.beginTransaction().add(elementListFragment, "elementList").commit();
+      elementListFragment.setData(elementList);
+
+      namesArrayFragment = new RetainedFragment();
+      fm.beginTransaction().add(namesArrayFragment, "names").commit();
+      namesArrayFragment.setData(names);
     } else {
-      elementList = dataFragment.getData();
+      elementList = (ArrayList<Element>) elementListFragment.getData();
+      names = (ArrayList<String>) namesArrayFragment.getData();
     }
   }
 
@@ -46,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     super.onStart();
 
     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-    RecyclerViewAdapter adapter = new RecyclerViewAdapter(elementList);
+    RecyclerViewAdapter adapter = new RecyclerViewAdapter(elementList, names);
     LinearLayoutManager layoutManager = new LinearLayoutManager(this);
 
     recyclerView.setAdapter(adapter);
@@ -63,7 +77,9 @@ public class MainActivity extends AppCompatActivity {
       }
 
       private void addItem() {
-        startActivityForResult(new Intent(MainActivity.this, CreateElementActivity.class), 0);
+        Intent intent = new Intent(MainActivity.this, CreateElementActivity.class);
+        intent.putStringArrayListExtra("names", names);
+        startActivityForResult(intent, 0);
       }
     });
   }
@@ -75,14 +91,18 @@ public class MainActivity extends AppCompatActivity {
     if (resultCode == RESULT_OK) {
       String name = data.getStringExtra("name");
       String color = data.getStringExtra("color");
-      elementList.add(new Element(name, Element.Type.values()[Integer.valueOf(color)]));
+      if (!names.contains(name)) {
+        elementList.add(new Element(name, Element.Type.values()[Integer.valueOf(color)]));
+        names.add(name);
+      }
     }
   }
 
   @Override
   protected void onDestroy() {
     super.onDestroy();
-    dataFragment.setData(elementList);
+    elementListFragment.setData(elementList);
+    namesArrayFragment.setData(names);
   }
 
 }

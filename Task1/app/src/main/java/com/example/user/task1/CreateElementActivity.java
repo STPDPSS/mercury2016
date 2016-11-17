@@ -1,31 +1,50 @@
 package com.example.user.task1;
 
 import android.app.AlertDialog;
+import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-
+import java.util.ArrayList;
 
 
 public class CreateElementActivity extends AppCompatActivity {
 
+  RetainedFragment dataFragment;
   final CharSequence colors[] =
           {"Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Empty"};
-  int globalColor = 0;
+  int globalColor;
   ImageView circle;
+  ArrayList<String> names;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.a_create_element);
+
+    Intent intent = getIntent();
+    names = intent.getStringArrayListExtra("names");
+
+    FragmentManager fm = getFragmentManager();
+    dataFragment = (RetainedFragment) fm.findFragmentByTag("data");
+    circle = (ImageView) findViewById(R.id.color);
+
+    if (dataFragment == null) {
+      globalColor = 0;
+      dataFragment = new RetainedFragment();
+      fm.beginTransaction().add(dataFragment, "data").commit();
+      dataFragment.setData(globalColor);
+    } else {
+      globalColor = (int) dataFragment.getData();
+      circle.setImageResource(iconResourceId(globalColor));
+    }
   }
 
   @Override
@@ -34,11 +53,9 @@ public class CreateElementActivity extends AppCompatActivity {
 
     final EditText editText = (EditText) findViewById(R.id.editText);
 
-    circle = (ImageView) findViewById(R.id.color);
     ChangeColorListener listener = new ChangeColorListener();
     listener.setColor(globalColor);
     circle.setOnClickListener(new ChangeColorListener());
-
 
     Button buttonCreate = (Button) findViewById(R.id.buttonCreate);
     Button buttonCancel = (Button) findViewById(R.id.buttonCancel);
@@ -48,10 +65,15 @@ public class CreateElementActivity extends AppCompatActivity {
     buttonCreate.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        intent.putExtra("name", editText.getText().toString());
-        intent.putExtra("color", String.valueOf(globalColor));
-        setResult(RESULT_OK, intent);
-        finish();
+        String name = editText.getText().toString();
+        if (!names.contains(name)) {
+          intent.putExtra("name", name);
+          intent.putExtra("color", String.valueOf(globalColor));
+          setResult(RESULT_OK, intent);
+          finish();
+        } else {
+          busyName(name);
+        }
       }
     });
 
@@ -64,6 +86,11 @@ public class CreateElementActivity extends AppCompatActivity {
     });
   }
 
+  public void busyName(String name) {
+    Snackbar.make(this.getCurrentFocus(),
+            "Элемент с именем \"" + name + "\" уже существует", Snackbar.LENGTH_LONG)
+            .setAction("Action", null).show();
+  }
 
   private class ChangeColorListener implements View.OnClickListener {
 
@@ -92,34 +119,8 @@ public class CreateElementActivity extends AppCompatActivity {
               .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
                   globalColor = localColor;
-                  int iconResourceId;
-                  switch (globalColor) {
-                    case 0:
-                      iconResourceId = R.drawable.red_circle;
-                      break;
-                    case 1:
-                      iconResourceId = R.drawable.orange_circle;
-                      break;
-                    case 2:
-                      iconResourceId = R.drawable.yellow_circle;
-                      break;
-                    case 3:
-                      iconResourceId = R.drawable.green_circle;
-                      break;
-                    case 4:
-                      iconResourceId = R.drawable.blue_circle;
-                      break;
-                    case 5:
-                      iconResourceId = R.drawable.indigo_circle;
-                      break;
-                    case 6:
-                      iconResourceId = R.drawable.violet_circle;
-                      break;
-                    default:
-                      iconResourceId = R.drawable.empty_circle;
-                      break;
-                  }
-                  circle.setImageResource(iconResourceId);
+                  dataFragment.setData(globalColor);
+                  circle.setImageResource(iconResourceId(globalColor));
                   dialog.cancel();
                 }
               })
@@ -134,4 +135,24 @@ public class CreateElementActivity extends AppCompatActivity {
     }
   }
 
+  public static int iconResourceId(int i) {
+    switch (i) {
+      case 0:
+        return R.drawable.red_circle;
+      case 1:
+        return R.drawable.orange_circle;
+      case 2:
+        return R.drawable.yellow_circle;
+      case 3:
+        return R.drawable.green_circle;
+      case 4:
+        return R.drawable.blue_circle;
+      case 5:
+        return R.drawable.indigo_circle;
+      case 6:
+        return R.drawable.violet_circle;
+      default:
+        return R.drawable.empty_circle;
+    }
+  }
 }

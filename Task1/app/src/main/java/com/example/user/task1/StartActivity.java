@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 public class StartActivity extends AppCompatActivity {
 
-  private RetainedHandler retainedHandler;
+  private RetainedFragment retainedFragment;
   Handler handler;
 
   @Override
@@ -18,16 +18,16 @@ public class StartActivity extends AppCompatActivity {
     setContentView(R.layout.a_start);
 
     FragmentManager fm = getFragmentManager();
-    retainedHandler = (RetainedHandler) fm.findFragmentByTag("handler");
+    retainedFragment = (RetainedFragment) fm.findFragmentByTag("handler");
 
-    if (retainedHandler == null) {
+    if (retainedFragment == null) {
       handler = new Handler();
       handler.postDelayed(openMainActivity, 2000);
-      retainedHandler = new RetainedHandler();
-      fm.beginTransaction().add(retainedHandler, "handler").commit();
-      retainedHandler.setData(handler);
+      retainedFragment = new RetainedFragment();
+      fm.beginTransaction().add(retainedFragment, "handler").commit();
+      retainedFragment.setData(handler);
     } else {
-      handler = retainedHandler.getData();
+      handler = (Handler) retainedFragment.getData();
     }
   }
 

@@ -1,22 +1,17 @@
 package com.example.user.task1;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.admin.SystemUpdatePolicy;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.graphics.Color;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,9 +21,11 @@ import java.util.List;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
   private List<Element> elements;
+  private ArrayList<String> names;
 
-  public RecyclerViewAdapter(List<Element> elements) {
+  public RecyclerViewAdapter(List<Element> elements, ArrayList<String> names) {
     this.elements = elements;
+    this.names = names;
   }
 
   @Override
@@ -216,6 +213,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private void remove(Element e) {
       int position = elements.indexOf(e);
       elements.remove(position);
+      names.remove(e.getName());
       notifyItemRemoved(position);
     }
   }

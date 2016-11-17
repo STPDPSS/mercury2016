@@ -2,15 +2,6 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.0_989a3fd03c12620533cfc5e3699ab9559a549c0b.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="/Users/nika/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
         jumboMode="true"
@@ -52,35 +43,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="53497936b0a4dbf243e732282e1a7c59b36806dd">
+        sha1="a258ac8dccfca9df51426de5be68abd23eea8de2">
         <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2295d17922f4843ba22df29d101ecd6f7849a7a8/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.0_461251ca981689c18f3d28053434c8e7cddae27d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_9ed2632a6fdd4b55c13dfc955703d6226136b7ab.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_a45644808cf7c4c74ef4913089ec96e248e474af.jar" />
     </item>
     <item
         is-multidex="true"
@@ -101,15 +65,6 @@
         <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_6815abf834a1c7db73bae8ad8bac20f6b03dda39/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.0_3f9b1bf853ef2a1a57e92c032a4cdc0130868693.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
         jumboMode="true"
@@ -128,42 +83,6 @@
         <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_37502fdaa3859c94a71fc8f3a024214523d02fa0/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.0_20e1e392c30b375687cd80c98c2246086b033d94.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.0_e2c42884818ae01ef760ab9edc7d8d0bf0cdb7ad.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.0_37502fdaa3859c94a71fc8f3a024214523d02fa0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.0_85780df025e1983c51c2e22d8a1b90bf0a674b62.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/25.0.0/jars/classes.jar"
         jumboMode="true"
@@ -171,33 +90,6 @@
         revision="25.0.0"
         sha1="5025063c4c03baa1b6759432195024dd8e5a3f92">
         <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-gridlayout-v7-25.0.0_6875024d4f3990a057ecd5d2a9512da24de498d7/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8a372c4191f80489770a231f7be4820b204b886a">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.0_d1ededaf50a219055203fb2d83ee29de60448c3c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_a478192fd405019df3f09cd8c7cf5f245d9224d3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/gridlayout-v7/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5025063c4c03baa1b6759432195024dd8e5a3f92">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-gridlayout-v7-25.0.0_6875024d4f3990a057ecd5d2a9512da24de498d7.jar" />
     </item>
     <item
         is-multidex="true"
@@ -245,40 +137,13 @@
         <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_d09fd93c28dda66cfec51453f5280986c3de89cf/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_6815abf834a1c7db73bae8ad8bac20f6b03dda39.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.0_d09fd93c28dda66cfec51453f5280986c3de89cf.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="6e3547f6848c6544afbea69d0949bb8560e5e00f">
+        sha1="74c2c5f343dd8110aa605195d44025f342e48ad5">
         <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_933adf594933b039916657242c50ad462fdb4cae/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.0_d4da24dafc693bd6e367546b623fe7b62cee7d7c.jar" />
     </item>
     <item
         is-multidex="true"
@@ -288,24 +153,6 @@
         revision="25.0.0"
         sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
         <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_a45644808cf7c4c74ef4913089ec96e248e474af/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.0_be0c14acfd9be7d9c548b3c941c5112490b9fd83.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.0_2e9f7938d0ea4c4a5cd43acf77a6fa679be6f582.jar" />
     </item>
     <item
         is-multidex="true"
@@ -326,15 +173,6 @@
         <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_be0c14acfd9be7d9c548b3c941c5112490b9fd83/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26674000177e45447a0326a6ad84612761199a13">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.0_7ba1e0023898a4f41285421f59b62ad83b3f72aa.jar" />
-    </item>
-    <item
         is-multidex="true"
         jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
         jumboMode="true"
@@ -351,24 +189,6 @@
         revision="25.0.0"
         sha1="26674000177e45447a0326a6ad84612761199a13">
         <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_7ba1e0023898a4f41285421f59b62ad83b3f72aa/classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.0_daf546dc6bb91f31646cf6c605cab2f2e1d2c8c9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.0_b8063510e78b6987257ae7808215ec470c3d0946.jar" />
     </item>
     <item
         is-multidex="true"
