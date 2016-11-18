@@ -1,4 +1,4 @@
-#Fri Nov 18 09:22:40 SAMT 2016
+#Fri Nov 18 09:33:25 SAMT 2016
 base.0=/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2295d17922f4843ba22df29d101ecd6f7849a7a8
 renamed.1=classes2.dex
 renamed.0=classes.dex
