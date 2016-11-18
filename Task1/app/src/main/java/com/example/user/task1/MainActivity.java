@@ -1,18 +1,15 @@
 package com.example.user.task1;
 
-import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 
@@ -55,13 +52,16 @@ public class MainActivity extends AppCompatActivity {
     }
   }
 
+  RecyclerView recyclerView;
+  LinearLayoutManager layoutManager;
+
   @Override
   protected void onStart() {
     super.onStart();
 
-    RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+    recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
     RecyclerViewAdapter adapter = new RecyclerViewAdapter(elementList, names);
-    LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+    layoutManager = new LinearLayoutManager(this);
 
     recyclerView.setAdapter(adapter);
     recyclerView.setLayoutManager(layoutManager);
@@ -82,19 +82,20 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, 0);
       }
     });
+
+
   }
 
   @Override
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
 
-    if (resultCode == RESULT_OK) {
+    if (requestCode == 0 && resultCode == RESULT_OK) {
       String name = data.getStringExtra("name");
       String color = data.getStringExtra("color");
-      if (!names.contains(name)) {
-        elementList.add(new Element(name, Element.Type.values()[Integer.valueOf(color)]));
-        names.add(name);
-      }
+      elementList.add(new Element(name, Element.Type.values()[Integer.valueOf(color)]));
+      names.add(name);
+      layoutManager.scrollToPosition(elementList.size() - 1);
     }
   }
 

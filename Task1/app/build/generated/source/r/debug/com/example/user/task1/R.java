@@ -2952,7 +2952,7 @@ containing a value of this type.
         public static final int fill_horizontal=0x7f0c0033;
         public static final int fill_vertical=0x7f0c0029;
         public static final int fixed=0x7f0c0041;
-        public static final int floatingActionButton=0x7f0c004b;
+        public static final int floatingActionButton=0x7f0c004c;
         public static final int home=0x7f0c0004;
         public static final int homeAsUp=0x7f0c0011;
         public static final int horizontal=0x7f0c0036;
@@ -2986,7 +2986,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0c0006;
         public static final int progress_horizontal=0x7f0c0007;
         public static final int radio=0x7f0c0069;
-        public static final int recyclerView=0x7f0c004c;
+        public static final int recyclerView=0x7f0c004b;
         public static final int remove_element=0x7f0c008c;
         public static final int right=0x7f0c002b;
         public static final int right_icon=0x7f0c009c;

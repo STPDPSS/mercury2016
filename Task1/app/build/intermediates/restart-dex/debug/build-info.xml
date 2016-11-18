@@ -5,33 +5,40 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="124950674482132"
+    timestamp="131829429035823"
     token="3519932234651196060"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="279" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="57" />
+        duration="0" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
     <artifact
-        location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="124950674482132"
+        timestamp="131732026113644"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="131829429035823"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

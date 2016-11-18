@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Nov 17 23:35:11 SAMT 2016
+#Fri Nov 18 00:57:17 SAMT 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/res/resources-debug.ap_/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png

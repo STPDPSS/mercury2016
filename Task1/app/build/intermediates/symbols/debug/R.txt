@@ -788,7 +788,7 @@ int id fill 0x7f0c0032
 int id fill_horizontal 0x7f0c0033
 int id fill_vertical 0x7f0c0029
 int id fixed 0x7f0c0041
-int id floatingActionButton 0x7f0c004b
+int id floatingActionButton 0x7f0c004c
 int id home 0x7f0c0004
 int id homeAsUp 0x7f0c0011
 int id horizontal 0x7f0c0036
@@ -822,7 +822,7 @@ int id pin 0x7f0c002f
 int id progress_circular 0x7f0c0006
 int id progress_horizontal 0x7f0c0007
 int id radio 0x7f0c0069
-int id recyclerView 0x7f0c004c
+int id recyclerView 0x7f0c004b
 int id remove_element 0x7f0c008c
 int id right 0x7f0c002b
 int id right_icon 0x7f0c009c
