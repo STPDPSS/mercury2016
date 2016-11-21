@@ -1,7 +1,7 @@
-#Fri Nov 18 09:33:25 SAMT 2016
-base.0=/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2295d17922f4843ba22df29d101ecd6f7849a7a8
+#Mon Nov 21 13:01:55 SAMT 2016
+base.0=/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ec1cfe363060ee1f97d4e437fdaa620379d11a98
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_933adf594933b039916657242c50ad462fdb4cae/classes.dex
-base.1=/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_933adf594933b039916657242c50ad462fdb4cae
-file.0=/Users/nika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2295d17922f4843ba22df29d101ecd6f7849a7a8/classes.dex
+file.1=/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0115ba33b0d75c1f06145d17acb15f7b7e10a59b/classes.dex
+base.1=/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0115ba33b0d75c1f06145d17acb15f7b7e10a59b
+file.0=/Users/veronika/AndroidStudioProjects/mercury2016/Task1/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ec1cfe363060ee1f97d4e437fdaa620379d11a98/classes.dex

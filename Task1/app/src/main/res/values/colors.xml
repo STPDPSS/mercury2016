@@ -3,14 +3,4 @@
   <color name="colorPrimary">#696969</color>
   <color name="colorPrimaryDark">#4F4F4F</color>
   <color name="colorAccent">#FF6347</color>
-
-  <!--RAINBOW COLORS-->
-  <color name="rainbow_red">#EE0000</color>
-  <color name="rainbow_orange">#FF8C00</color>
-  <color name="rainbow_yellow">#FFFF00</color>
-  <color name="rainbow_green">#00EE76</color>
-  <color name="rainbow_blue">#6495ED</color>
-  <color name="rainbow_indigo">#3A5FCD</color>
-  <color name="rainbow_violet">#7D26CD</color>
-
 </resources>

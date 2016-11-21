@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +12,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,201 +20,137 @@ import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-  private List<Element> elements;
-  private ArrayList<String> names;
+  private List<ListItem> listItems;
 
-  public RecyclerViewAdapter(List<Element> elements, ArrayList<String> names) {
-    this.elements = elements;
-    this.names = names;
+  public RecyclerViewAdapter(List<ListItem> listItems) {
+    this.listItems = listItems;
   }
 
   @Override
   public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.i_element, parent, false);
-    return new ViewHolder(v);
+    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
+    return new ViewHolder(view);
   }
 
   @Override
   public void onBindViewHolder(ViewHolder viewHolder, int position) {
-    Element e = elements.get(position);
-    int iconResourceId = R.drawable.empty_circle;
-    switch (e.getType()) {
-      case RED:
-        iconResourceId = R.drawable.red_circle;
-        break;
-      case ORANGE:
-        iconResourceId = R.drawable.orange_circle;
-        break;
-      case YELLOW:
-        iconResourceId = R.drawable.yellow_circle;
-        break;
-      case GREEN:
-        iconResourceId = R.drawable.green_circle;
-        break;
-      case BLUE:
-        iconResourceId = R.drawable.blue_circle;
-        break;
-      case INDIGO:
-        iconResourceId = R.drawable.indigo_circle;
-        break;
-      case VIOLET:
-        iconResourceId = R.drawable.violet_circle;
-        break;
-    }
-    viewHolder.color.setImageResource(iconResourceId);
-    viewHolder.name.setText(e.getName());
-    viewHolder.removeButtonListener.setElement(e);
-    viewHolder.selectListener.setElement(e);
-    viewHolder.changeColorListener.setElement(e);
+    ListItem item = listItems.get(position);
+    viewHolder.colorIcon.setImageResource(item.getColor().iconId);
+    viewHolder.nameText.setText(item.getName());
+    viewHolder.removeButtonListener.setListItem(item);
+    viewHolder.selectListener.setListItem(item);
+    viewHolder.changeColorListener.setListItem(item);
   }
 
   @Override
   public int getItemCount() {
-    return elements.size();
+    return listItems.size();
   }
 
   class ViewHolder extends RecyclerView.ViewHolder {
-    private TextView name;
-    private ImageView color;
-    private Button remove;
+    private TextView nameText;
+    private ImageView colorIcon;
+    private Button removeButton;
     private RemoveButtonListener removeButtonListener;
     private SelectListener selectListener;
     private ChangeColorListener changeColorListener;
 
     public ViewHolder(View itemView) {
       super(itemView);
-      name = (TextView) itemView.findViewById(R.id.element_name);
-      color = (ImageView) itemView.findViewById(R.id.element_color);
-      remove = (Button) itemView.findViewById(R.id.remove_element);
+      nameText = (TextView) itemView.findViewById(R.id.element_name);
+      colorIcon = (ImageView) itemView.findViewById(R.id.element_color);
+      removeButton = (Button) itemView.findViewById(R.id.remove_element);
       removeButtonListener = new RemoveButtonListener();
+      removeButton.setOnClickListener(removeButtonListener);
       selectListener = new SelectListener();
-      changeColorListener = new ChangeColorListener();
-      remove.setOnClickListener(removeButtonListener);
-      color.setOnClickListener(changeColorListener);
       itemView.setOnClickListener(selectListener);
+      changeColorListener = new ChangeColorListener();
+      colorIcon.setOnClickListener(changeColorListener);
     }
 
     private class ChangeColorListener implements View.OnClickListener {
 
-      private Element e;
-      final CharSequence colors[] =
-              {"Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Empty"};
-      int color = -1;
+      private ListItem item;
 
       @Override
       public void onClick(View view) {
-        System.out.println("onClick: change i_color");
-        changeColorDialog(view);
-      }
-
-      public void setElement(Element e) {
-        this.e = e;
-      }
-
-      private void changeColorDialog(final View v) {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-        CharSequence title = v.getContext().getString(R.string.change_color)
-                + " " + e.getName() + " на:";
-        builder.setTitle(title)
-                .setSingleChoiceItems(colors, -1, new DialogInterface.OnClickListener() {
-
-                  @Override
-                  public void onClick(DialogInterface dialog, int item) {
-                    color = item;
-                  }
-                })
-                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-                  public void onClick(DialogInterface dialog, int id) {
-                    if (color != -1) {
-                      e.setType(Element.Type.values()[color]);
-                      notifyItemChanged(elements.indexOf(e));
-                    }
-                    dialog.cancel();
-                  }
-                })
-                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
-                  @Override
-                  public void onClick(DialogInterface dialog, int i) {
-                    dialog.cancel();
-                  }
-                });
-        AlertDialog dialog = builder.create();
+        Log.i("SplashScreen", "onClick: change i_color");
+        AlertDialog dialog = ListItem.createChangeColorDialog(
+            view.getContext(),
+            item.getColor(),
+            new ListItem.ColorChangeCallBack() {
+              @Override
+              public void colorChange(ListItem.Color color) {
+                item.setColor(color);
+                notifyItemChanged(listItems.indexOf(item));
+              }
+            }
+        );
         dialog.show();
+      }
+
+      public void setListItem(ListItem item) {
+        this.item = item;
       }
     }
 
-
     private class SelectListener implements View.OnClickListener {
 
-      private Element e;
+      private ListItem item;
 
       @Override
-      public void onClick(View v) {
-        System.out.println("onClick: select item");
-        selectDialog(v);
-      }
-
-      public void setElement(Element e) {
-        this.e = e;
-      }
-
-      private void selectDialog(final View v) {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-        CharSequence message = v.getContext().getString(R.string.select_element)
-                + " " + e.getName();
-        builder.setMessage(message)
-                .setNeutralButton(R.string.ok, new DialogInterface.OnClickListener() {
-                  public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                  }
-                });
-        AlertDialog dialog = builder.create();
+      public void onClick(View view) {
+        Log.i("SplashScreen", "onClick: select item");
+        AlertDialog dialog = (new AlertDialog.Builder(view.getContext()))
+            .setMessage(
+                String.format(view.getContext().getString(R.string.list_item_selection_notification), item.getName()))
+            .setNeutralButton(R.string.ok, new DialogInterface.OnClickListener() {
+              public void onClick(DialogInterface dialog, int id) {
+                dialog.dismiss();
+              }
+            }).create();
         dialog.show();
+      }
+
+      public void setListItem(ListItem item) {
+        this.item = item;
       }
     }
 
     private class RemoveButtonListener implements View.OnClickListener {
 
-      private Element e;
+      private ListItem item;
 
       @Override
-      public void onClick(View v) {
-        System.out.println("onClick: remove item");
-        removeDialog(v);
-      }
-
-      public void setElement(Element e) {
-        this.e = e;
-      }
-
-      private void removeDialog(final View v) {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-        CharSequence message = v.getContext().getString(R.string.remove_element)
-                + " " + e.getName() + "?";
-        builder.setMessage(message)
-                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
-                  public void onClick(DialogInterface dialog, int id) {
-                    remove(e);
-                    dialog.cancel();
-                    Snackbar.make(v, e.getName() + " был удален", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
-                  }
-                })
-                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
-                  public void onClick(DialogInterface dialog, int id) {
-                    dialog.cancel();
-                  }
-                });
-        AlertDialog dialog = builder.create();
+      public void onClick(final View view) {
+        Log.i("SplashScreen", "onClick: removeButton item");
+        AlertDialog dialog = (new AlertDialog.Builder(view.getContext()))
+            .setMessage(
+                String.format(view.getContext().getString(R.string.remove_list_item_prompt), item.getName()))
+            .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+              public void onClick(DialogInterface dialog, int id) {
+                int position = listItems.indexOf(item);
+                listItems.remove(position);
+                notifyItemRemoved(position);
+                dialog.dismiss();
+                Snackbar.make(view,
+                    String.format(
+                        view.getContext().getString(R.string.list_item_has_been_removed), item.getName()),
+                    Snackbar.LENGTH_LONG)
+                    .show();
+              }
+            })
+            .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+              public void onClick(DialogInterface dialog, int id) {
+                dialog.dismiss();
+              }
+            }).create();
         dialog.show();
       }
-    }
 
-    private void remove(Element e) {
-      int position = elements.indexOf(e);
-      elements.remove(position);
-      names.remove(e.getName());
-      notifyItemRemoved(position);
+      public void setListItem(ListItem item) {
+        this.item = item;
+      }
     }
   }
 }

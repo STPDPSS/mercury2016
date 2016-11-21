@@ -9,7 +9,7 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
-  <style name="StartTheme" parent="Theme.AppCompat.Light.NoActionBar">
+  <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <!-- Customize your theme here. -->
     <item name="colorPrimary">@color/colorPrimary</item>
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

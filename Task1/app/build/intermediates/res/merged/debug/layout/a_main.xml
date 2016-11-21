@@ -11,9 +11,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content">
 
-
   </android.support.design.widget.AppBarLayout>
-
 
   <android.support.v7.widget.RecyclerView
       android:id="@+id/recyclerView"
@@ -37,7 +35,6 @@
       app:backgroundTint="@color/colorAccent"
       app:fabSize="normal"
       app:layout_behavior="com.example.user.task1.FloatingActionButtonBehavior"
-      app:srcCompat="@drawable/plus"/>
-
+      app:srcCompat="@drawable/icon_plus"/>
 
 </android.support.design.widget.CoordinatorLayout>

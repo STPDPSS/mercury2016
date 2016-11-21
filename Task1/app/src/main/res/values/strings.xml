@@ -1,15 +1,18 @@
 <resources>
   <string name="app_name">Splash Screen</string>
-  <string name="create_element">Создание нового элемента</string>
+  <string name="add_list_item_title">Создание нового элемента</string>
   <string name="ok">OK</string>
   <string name="yes">Да</string>
   <string name="no">Нет</string>
   <string name="cancel">Отмена</string>
-  <string name="remove_element">Вы уверены, что хотите удалить </string>
-  <string name="select_element">Вы нажали на </string>
-  <string name="write_name">Введите название нового элемента</string>
-  <string name="choose_color">Выберите цвет нового элемента</string>
-  <string name="default_element_name">Элемент n</string>
-  <string name="change_color">Измененить цвет</string>
-  <string name="create">Создать</string>
+  <string name="remove_list_item_prompt">Вы уверены, что хотите удалить \"%s\"?</string>
+  <string name="list_item_selection_notification">Вы нажали на \"%s\"</string>
+  <string name="list_item_name_label">Введите название нового элемента</string>
+  <string name="list_item_color_label">Выберите цвет элемента</string>
+  <string name="list_item_default_new_name">Элемент n</string>
+  <string name="list_item_change_color_dialog_title">Измененить цвет</string>
+  <string name="list_item_already_exists">Элемент с именем \"%s\" уже существует</string>
+  <string name="list_item_has_been_removed">\"%s\" был удален</string>
+  <string name="list_item_default_name">Элемент %d</string>
+  <string name="create_list_item_button_title">Создать элемент</string>
 </resources>

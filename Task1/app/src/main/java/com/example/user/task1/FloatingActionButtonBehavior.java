@@ -19,17 +19,20 @@ public class FloatingActionButtonBehavior extends CoordinatorLayout.Behavior<Flo
   }
 
   @Override
-  public boolean layoutDependsOn(CoordinatorLayout parent, FloatingActionButton child, View dependency) {
+  public boolean layoutDependsOn(
+      CoordinatorLayout parent, FloatingActionButton child, View dependency) {
     return dependency instanceof Snackbar.SnackbarLayout || dependency instanceof RecyclerView;
   }
 
   @Override
-  public void onDependentViewRemoved(CoordinatorLayout parent, FloatingActionButton child, View dependency) {
+  public void onDependentViewRemoved(
+      CoordinatorLayout parent, FloatingActionButton child, View dependency) {
     child.show();
   }
 
   @Override
-  public boolean onDependentViewChanged(CoordinatorLayout parent, FloatingActionButton child, View dependency) {
+  public boolean onDependentViewChanged(
+      CoordinatorLayout parent, FloatingActionButton child, View dependency) {
     if (dependency instanceof Snackbar.SnackbarLayout) {
       child.hide();
       return true;
@@ -39,21 +42,21 @@ public class FloatingActionButtonBehavior extends CoordinatorLayout.Behavior<Flo
   }
 
   @Override
-  public boolean onStartNestedScroll(final CoordinatorLayout coordinatorLayout,
-                                     final FloatingActionButton child,
-                                     final View directTargetChild, final View target, final int nestedScrollAxes) {
+  public boolean onStartNestedScroll(
+      final CoordinatorLayout coordinatorLayout, final FloatingActionButton child,
+      final View directTargetChild, final View target, final int nestedScrollAxes) {
     return nestedScrollAxes == ViewCompat.SCROLL_AXIS_VERTICAL
-            || super.onStartNestedScroll(coordinatorLayout, child,
-            directTargetChild, target, nestedScrollAxes);
+        || super.onStartNestedScroll(coordinatorLayout, child,
+        directTargetChild, target, nestedScrollAxes);
   }
 
   @Override
-  public void onNestedScroll(final CoordinatorLayout coordinatorLayout,
-                             final FloatingActionButton child,
-                             final View target, final int dxConsumed, final int dyConsumed,
-                             final int dxUnconsumed, final int dyUnconsumed) {
+  public void onNestedScroll(
+      final CoordinatorLayout coordinatorLayout, final FloatingActionButton child,
+      final View target, final int dxConsumed, final int dyConsumed, final int dxUnconsumed,
+      final int dyUnconsumed) {
     super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed,
-            dxUnconsumed, dyUnconsumed);
+        dxUnconsumed, dyUnconsumed);
     if (dyConsumed > 0) {
       child.hide();
     } else if (dyConsumed < 0) {
